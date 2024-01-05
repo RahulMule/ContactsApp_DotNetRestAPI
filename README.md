@@ -56,6 +56,19 @@ The project structure follows a typical ASP.NET Web API pattern, utilizing Entit
 3. Run the application using Visual Studio or `dotnet run`.
 4. Test the API using a tool like [Postman](https://www.postman.com/) or [Swagger](https://swagger.io/).
 
+## Docker Support
+
+This project includes a Dockerfile to facilitate containerized deployment.
+
+### Build Docker Image
+
+To build the Docker image, run the following command in the project directory:
+
+```bash
+docker build -t contacts-app .
+Once the Docker image is built, you can run a container using the following command:
+docker run -p 8080:80 -d contacts-app
+
 ## Dependencies
 
 - ASP.NET Core
