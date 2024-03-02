@@ -52,7 +52,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'stage-webapprahul'
-          slot-name: 'stage'
+          slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_12400764F254403A8F31219315606268 }}
           # Set connection strings as environment variables
