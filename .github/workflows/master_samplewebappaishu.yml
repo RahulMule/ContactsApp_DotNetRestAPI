@@ -57,4 +57,4 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_12400764F254403A8F31219315606268 }}
           # Set connection strings as environment variables
         env:
-          ConnectionString: ${{ secrets.DEFAULTCONNECTIONSTRING }}
+          ConnectionStrings__DefaultConnectionString: ${{ secrets.DEFAULTCONNECTIONSTRING }}
